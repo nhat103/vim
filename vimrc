@@ -69,6 +69,7 @@ nnoremap <leader>n :vert term<CR>
 call plug#begin()
 " List your plugins here
 Plug 'itchyny/lightline.vim'
+Plug 'itchyny/vim-gitbranch'
 Plug 'preservim/nerdtree'
 call plug#end()
 " ===============
@@ -81,7 +82,15 @@ set laststatus=2
 set noshowmode
 let g:lightline = {
       \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
       \ }
+      \ }
+
 "==============
 " end status bar
 "==============
