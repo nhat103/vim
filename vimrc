@@ -2,18 +2,18 @@
 " File tạm & lưu trữ
 " =========================
 
-set viminfofile^=~/.config/vim/tmp/viminfo
+set viminfofile^=~/.vim/tmp/viminfo
 
 " Nơi lưu swap file (.swp, .swo)
 set directory^=~/.config/vim/tmp/swap//
 
 " Nơi lưu backup file (~)
 set backup
-set backupdir^=~/.config/vim/tmp/backup//
+set backupdir^=~/.vim/tmp/backup//
 
 " Nơi lưu undo file (phục hồi undo sau khi đóng Vim)
 set undofile
-set undodir^=~/.config/vim/tmp/undo//
+set undodir^=~/.vim/tmp/undo//
 
 " Hiển thị số dòng
 set number
